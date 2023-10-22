@@ -1,0 +1,60 @@
+<p>notes works!</p>
+<router-outlet></router-outlet>
+<div style="text-align: center">
+  <img src="../assets/logo.png" 
+  alt="Notes app logo"
+  width="100"
+  height="100"
+  class="logo"/>
+
+  <h1 class="app-title">Personal Notes App</h1>
+  <h2></h2>
+</div>
+
+
+<div class="container">
+    Add notes...
+    <br>
+    <input 
+      type="text"
+      class="input-text"
+      placeholder="Add Note Title"
+      [(ngModel)]="noteValue"
+      (keyup.enter)="addItem()"
+    />
+    <br>
+    <br>
+    <input type="text" class="input-text" name="desription"   placeholder="Add your note description " [(ngModel)]="noteDescription"
+    (keyup.enter)="addItem()"/>
+    &nbsp; &nbsp; <button class="add-btn" (click)="addItem()">Add to notes</button>
+    <div class="list">
+      <ul>
+          <li *ngFor="let item of list">
+            <input type="checkbox" name="isDone"
+            [(ngModel)]="item.isDone"
+            />
+            
+            <!-- {{item.title}}
+            {{item.value}} -->
+  
+            <div class="note">
+              <div class="note-title">Note Title: {{item.title}}</div>
+              <div class="note-description">{{item.value}}</div>
+              <!-- <button class="delete-button" (click)="deleteItem(item.id)">Delete</button> -->
+              <!-- <button class="delete-button" onclick="deleteNote(this)">Delete</button> -->
+          </div>
+           
+            <!-- <button class="add-btn" (click)="deleteItem(item.id)">Delete</button> -->
+            <!-- <button class="btn" (click)="updateItem(item.id, item.value)">Update the Note</button> -->
+          </li>
+      </ul>
+      </div>
+  
+  
+      
+  
+    
+  </div>
+  
+
+

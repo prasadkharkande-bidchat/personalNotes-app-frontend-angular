@@ -1,0 +1,78 @@
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-text{
+    display: inline;
+    margin: 0;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 10px;
+}
+
+.list ul li button{
+    position: absolute;
+    right: 0%;
+    background: #f34541;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 0.4rem;
+    display: inline-block;
+    border: none;
+}
+
+.app-title {
+    text-align: center;
+    color: #c1c1c1;
+    font-size: 70px; 
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;;
+}
+
+
+.list ul li {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: #c1c1c1;
+}
+
+.container{
+    color: #fff;
+    max-width: 500px;
+    margin: auto;
+}
+
+.note {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.note-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.note-description {
+    font-size: 14px;
+}
+
+.delete-button {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
